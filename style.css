@@ -1,0 +1,471 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --color-bg: rgb(250, 249, 245);
+    --color-primary: rgb(247, 149, 2);
+    --color-bg-2: rgba(218, 162, 78, 0.822);
+    --color-bg-1: rgba(247, 149, 2, 0.226);
+    --color-white: #fff;
+    --color-black: #000;
+}
+body{
+    background-color: var(--color-bg);
+}
+h1, h2,h3, h4{
+    line-height: 1.3;
+}
+p{
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.active, span{
+    color: var(--color-primary);
+}
+a{
+    color: var(--color-black);
+}
+img{
+    width: 100%;
+    height: 30rem;
+    display: block;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.button{
+    background-color: var(--color-primary);
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    border-radius: 7px;
+    transition: all .5s;
+}
+.button a{
+    color: var(--color-white);
+    font-size: 1.3rem;
+}
+.button:hover{
+    background-color: transparent;
+    border:1px solid var(--color-primary);
+    color: var(--color-primary);
+}
+/* select{
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    width: 9rem;
+    background-color: transparent;
+} */
+
+/* NAV */
+nav{
+    height: 5rem;
+}
+.nav_container{
+    height: 100%;
+    width: 96%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    font-weight: 550;
+    font-size: 1.5rem;
+}
+.nav_menu{
+    display: flex;
+    gap: 3rem;
+}
+.icon{
+    display: flex;
+    gap: 1rem;
+}
+.icon i{
+    font-size: 1.2rem;
+}
+
+/* HEADER */
+header{
+    position: relative;
+    height: 100%;
+    top: 2rem;
+}
+.header_container{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    
+}
+.header_left{
+    margin: auto;
+}
+.header_left h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--color-primary);  
+}
+.header_left p{
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+/* COMPANY */
+.company{
+    margin-top: 10rem;
+    height: 100%;
+}
+.company h2{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.company_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.company_container p{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* INTERIORS */
+.interiors{
+    margin-top: 7rem;
+}
+.interior_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+.interior_left h1{
+    margin-bottom: 2rem;
+    padding-right: 14rem;
+}
+.interior{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 2rem;
+    margin-bottom: -2rem;
+}
+.interior img{
+    width: 100%;
+    height: 12rem;
+}
+.interior p{
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    font-size: 1rem;
+}
+
+/* PRODUCTS */
+.products{
+    margin-top: 5rem;
+    height: 100%;
+}
+.product_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 4rem;
+    gap: 2rem;
+}
+.one{
+    background: url('./img/im6.jpg.jpg') no-repeat center center/ cover;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    border-radius: 1rem;
+}
+.two{
+    background: url('./img/im7.jpg.jpg') no-repeat center center/ cover;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    border-radius: 1rem;
+}
+.three{
+    background: url('./img/im8.jpg.jpg') no-repeat center center/ cover;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    border-radius: 1rem;
+}
+.four{
+    background: url('./img/im9.jpg.jpg') no-repeat center center/ cover;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    border-radius: 1rem;
+}
+
+.product p{
+     margin-top: 15rem;
+     margin: 15rem 0 1rem;
+     background: var(--color-white);
+     width: 6rem;
+     padding: 0.6rem;
+     border-radius: 10rem;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 7rem;
+    padding-top: 3rem;
+    background: var(--color-bg-2);
+    color: var(--color-white);
+    margin-bottom: 0;
+}
+.footer_sub{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+.sub_left h2{
+    padding-right: 25rem;
+}
+.sub_left p{
+    padding-right: 18rem;
+}
+form{
+    display: flex;
+    background: var(--color-white);
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+button{
+    font-size: 1rem;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    width: 7rem;
+    border-radius: 0.5rem;
+}
+input{
+    padding: 1rem;
+    width: 20rem;
+}
+::placeholder{
+    font-size: 1.2rem;
+}
+.footer_foot{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 1rem 0 2rem;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.432);
+}
+.links{
+    display: flex;
+    gap: 8rem;
+}
+.links a{
+    color: var(--color-white);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px){
+    .container{
+        width: 94%;
+        margin: auto;
+    }
+    .nav_menu{
+        display: none;
+    }
+    header{
+        top: 0rem;
+    }
+    .header_container{
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        
+    }
+    .header_left{
+        margin: 0;
+    }
+    .header_left h1{
+        margin-bottom: 1rem;
+        font-size: 1.5rem; 
+    }
+    .header_left p{
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+    }
+    .company{
+        margin-top: 7rem;
+    }
+    .company h2{
+        margin-bottom: 1.3rem;
+    }
+    .company_container h1{
+        font-size: 1.2rem;
+    }
+    .company_container p{
+        font-size: 1rem;
+    }
+    
+    .interiors{
+        margin-top: 4rem;
+    }
+    .interior_container{
+        grid-template-columns: 1fr;
+    }
+    .interior_left h1{
+        margin-bottom: 1rem;
+        padding-right: 0;
+    }
+    .interior p{
+        font-size: 0.8rem;
+        margin-right: 8rem;
+    }
+    .products{
+        margin-top: rem;
+    }
+    .product_container{
+        margin-top: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer{
+        margin-top: 4rem;
+    }
+    button{
+        font-size: 0.7rem;
+        color: var(--color-white);
+        background-color: var(--color-primary);
+        width: 5rem;
+        border-radius: 0;
+    }
+    .footer_sub{
+        margin-bottom: 2rem;
+    }
+    .sub_left h2{
+        padding-right: 15rem;
+        font-size: 1rem;
+    }
+    .sub_left p{
+        padding-right: 12rem;
+        font-size: 0.8rem;
+    }
+    form{
+        padding: 0rem;
+        height: 2rem;
+    }
+    input{
+        width: 13rem;
+    }
+    ::placeholder{
+        font-size: 0.8rem;
+    }
+    .footer_foot{
+        gap: 3rem;
+        padding: 1rem;
+    }
+    .logo h3{
+        font-size: 1rem;
+    }
+    .logo p{
+        font-size: 0.8rem;
+    }
+    .links{
+        display: flex;
+        gap: 4rem;
+    }
+    .links a{
+        color: var(--color-white);
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        width: 96%;
+        margin: auto;
+    }
+    img{
+        height: 20rem;
+    }
+    .button{
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .header_left{
+        padding-right: 4rem;
+    }
+    .company{
+        margin-top: 3rem;
+    }
+    .interiors{
+        margin-top: 3rem;
+    }
+    .interiors h1{
+        padding-right: 5rem;
+        font-size: 1.2rem;
+    }
+    .interior_container{
+        gap: 2rem;
+    }
+    .interior{
+        gap: 1.5rem;
+    }
+    .interior img{
+        height: 10rem;
+    }
+    .interior h3{
+        font-size: 1rem;
+    }
+    .interior p{
+        margin-top: 0.5rem;
+        margin-bottom: 4rem;
+        font-size: 0.6rem;
+        margin-right: 4rem;
+    }
+    .products{
+        margin-top: 3rem;
+    }
+    .product_container{
+        grid-template-columns: 1fr;
+    }
+    .footer_sub{
+        margin-bottom: 2rem;
+    }
+    .footer_sub{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .sub_left h2{
+        padding-right: 0rem;
+    }
+    .sub_left p{
+        padding-right: 0rem;
+    }
+    .logo h3{
+        font-size: 07rem.8rem;
+    }
+    .footer_foot{
+        padding: 1rem 0;
+    }
+    .logo p{
+        font-size: 0.7rem;
+    }
+    .links{
+        display: flex;
+        gap: 1rem;
+    }
+    .links a{
+        font-size: 0.8rem;
+    }
+}
